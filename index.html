@@ -29,7 +29,7 @@
     <button class="rail-toggle-btn" id="railToggleBtn" title="Toggle Sidebar">❮</button>
     <div class="rail-label">TOOLS</div>
     <button class="tool-switch active" data-panel="yt-search"><span class="dot"></span>YT Search</button>
-    <button class="tool-switch" data-panel="hbeam"><span class="dot"></span>Solitaire</button>
+    <button class="tool-switch" data-panel="hbeam"><span class="dot"></span>Cloud Browser</button>
     <button class="tool-switch" data-panel="solitaire"><span class="dot"></span>Solitaire</button>
     <button class="tool-switch" data-panel="notes"><span class="dot"></span>Notes</button>
     <button class="tool-switch" data-panel="calc"><span class="dot"></span>Calculator</button>
@@ -61,10 +61,20 @@
       </div>
     </section>  
 
- <!-- Section: Hyperbeam Cloud Browser Interface Panel with class 'panel' added -->
-<section id="panel-hbeam" class="panel browser-app-section">
-    <iframe src="https://hyperbeam.com" allow="autoplay; camera; microphone; fullscreen" loading="lazy"></iframe>
-</section>
+  <!-- Section One: Hyperbeam Cloud Browser Interface -->
+<section id="panel-hbeam" class="browser-app-section">
+    <!-- Browser Top Bar / Controls Emulator -->
+    <div class="browser-top-bar">
+        <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+        <div class="address-bar">
+            <span class="lock-icon">🔒</span>
+            <input type="text" class="url-input" value="https://hyperbeam.com" readonly>
+        </div>
+    </div>
 
     <!-- The actual Hyperbeam Screen Container -->
     <div class="iframe-screen-wrapper">
